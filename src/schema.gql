@@ -1,0 +1,36 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  id: Float!
+  email: String!
+  biometricKey: String
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type AuthResponse {
+  token: String!
+}
+
+type Query {
+  sayHello: String!
+}
+
+type Mutation {
+  registerUser(data: RegisterUserInput!): User!
+  login(email: String!, password: String!): AuthResponse!
+  biometricLogin(email: String!, biometricKey: String!): AuthResponse!
+}
+
+input RegisterUserInput {
+  email: String!
+  password: String!
+  bioMetricKey: String
+}
