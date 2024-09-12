@@ -7,7 +7,7 @@ This guide outlines how to set up and run the NestJS-based RESTful API with Pris
 Start by cloning the project repository from GitHub:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/sogunshola/nest-prisma-graphql.git
 cd your-repo-name
 ```
 
@@ -96,7 +96,7 @@ This will execute all the tests in the project and display the results.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/sogunshola/nest-prisma-graphql.git
    cd your-repo-name
    ```
 
